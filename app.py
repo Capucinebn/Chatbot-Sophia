@@ -249,8 +249,7 @@ def index():
 @app.route('/chat', methods=['POST'])
 def chat():
     data = request.json
-    prompt = SYSTEM_PROMPT + "\n\nIMPORTANT: Respond in the same language as the user. Keep your answer 
-under 3 sentences.\n\nQuestion: " + data['message']
+    prompt = SYSTEM_PROMPT + "\n\nQuestion: " + data['message']
     response = client.models.generate_content(
         model="gemini-2.5-flash-lite",
         contents=prompt
