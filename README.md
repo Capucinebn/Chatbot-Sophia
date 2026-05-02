@@ -1,6 +1,6 @@
 # Sophia AI Teacher Chatbot
 
-> A bilingual AI-powered teacher built with Python, Flask, and the Gemini API. Sophia explains any topic with clarity and enthusiasm — in French or English.
+> A bilingual AI-powered teacher built with Python, Flask, and the Gemini API. Sophia explains any topic with clarity and enthusiasm in French or English.
 
 **Live demo → [chatbot-sophia.onrender.com](https://chatbot-sophia.onrender.com)**
 
@@ -16,11 +16,11 @@ She automatically detects your language and responds in French or English.
 
 ## Features
 
-- Bilingual (French / English) — auto-detects the user's language
-- Concise responses — no walls of text, just clear explanations
-- Follow-up questions — Sophia invites you to go deeper
-- Clean dark UI — built with vanilla HTML/CSS/JS
-- Deployed live — accessible from anywhere
+- Bilingual (French / English): auto-detects the user's language
+- Conversation Memory: Sophia remembers what you said earlier in the session
+- Follow-up questions: Sophia invites you to go deeper
+- Clean dark UI: built with vanilla HTML/CSS/JS
+- Deployed live: accessible from anywhere
 
 ---
 
