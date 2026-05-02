@@ -245,15 +245,30 @@ HTML = """
 def index():
     return render_template_string(HTML)
 
+conversation_history = []
+
 @app.route('/chat', methods=['POST'])
 def chat():
     data = request.json
-    prompt = SYSTEM_PROMPT + "\n\nQuestion: " + data['message']
+    
+    conversation_history.append(data['message'])
+    
+    history_text = "\n".join([
+        f"{'Élève' if i % 2 == 0 else 'Sophia'}: {msg}" 
+        for i, msg in enumerate(conversation_history)
+    ])
+    
+    prompt = SYSTEM_PROMPT + "\n\nHistorique de la conversation:\n" + history_text
+    
     response = client.models.generate_content(
         model="gemini-2.5-flash-lite",
         contents=prompt
     )
-    return jsonify({'reply': response.text})
+    
+    reply = response.text
+    conversation_history.append(reply)
+    
+    return jsonify({'reply': reply})
 
 if __name__ == '__main__':
     app.run(debug=True)
