@@ -88,4 +88,4 @@ This app is ready to deploy on [Render](https://render.com) for free:
 **Capucine Buchet de Neuilly**  
 ESSEC Business School — exploring the intersection of business strategy and deep tech.
 
-[LinkedIn](https://linkedin.com/in/capucinebuchetdeneuilly) · [GitHub](https://github.com/Capucinebn)
+[LinkedIn](https://www.linkedin.com/in/capucine-buchet-de-neuilly-638108286/) · [GitHub](https://github.com/Capucinebn)
